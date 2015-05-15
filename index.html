@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="jquery-1.11.3.js"></script>
+</head>
+<body>
+
+<section class="receipt">
+<div class="line-item">
+<div class="text inline">
+Total:
+</div>
+<div class="amt inline">
+<input id="total" type="number">
+</div>
+</div>
+
+	<div class="line-item">
+		<div class="text inline">
+			Tax (13%):
+		</div>
+		<div class="amt inline">
+			<input id="tax" type="number" readonly>
+		</div>
+	</div>
+
+	<div class="line-item">
+			<div class="text inline">
+				Tip Percentage:
+			</div>
+		<div class="amt inline">
+				<!--<div class="percent-sign">%</div>
+		<input id="tip_percent" class="symbol-buffer" type="text">-->
+			<select name="" id="tip_percent" class="symbol-buffer">
+				<option value="10">10 %</option>
+				<option value="15">15 %</option>
+				<option value="20">20 %</option>
+			</select>
+		</div>
+	</div>
+<button id="calculate_tip">Calculate Tip</button>
+<div class="border-break"></div>
+<div class="line-item">
+<div class="text inline">
+Tip Amount:
+</div>
+<div class="amt inline">
+<input id="tip_amt" type="text" readonly>
+</div>
+</div>
+</section>
+
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
